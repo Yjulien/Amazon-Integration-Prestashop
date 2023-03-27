@@ -11,7 +11,7 @@ class AmazonConnector extends Module
         $this->name = 'amazonconnector';
         $this->tab = 'others';
         $this->version = '1.0.0';
-        $this->author = 'Votre Nom';
+        $this->author = 'Nom';
         $this->need_instance = 0;
         $this->ps_versions_compliancy = array('min' => '1.7', 'max' => _PS_VERSION_);
 
@@ -19,7 +19,6 @@ class AmazonConnector extends Module
 
         $this->displayName = $this->l('Amazon Connector');
         $this->description = $this->l('Intégration automatique des produits de votre boutique Prestashop sur votre boutique Amazon.');
-
         $this->confirmUninstall = $this->l('Êtes-vous sûr de vouloir désinstaller le module Amazon Connector ?');
     }
 
@@ -54,7 +53,7 @@ class AmazonConnector extends Module
                 // Insérez les données du produit formatées pour Amazon ici
             );
         
-            // Utiliser l'API d'Amazon pour créer ou mettre à jour le produit sur votre boutique Amazon
+            // Utiliser l'API d'Amazon pour créer ou mettre à jour le produit sur la boutiqueAmazon
             $amazon_api = new AmazonAPI(); 
             $response = $amazon_api->createOrUpdateProduct($amazon_product_data); //Appel la méthode de l'API pour créer ou mettre à jour le produit
         
@@ -126,7 +125,7 @@ class AmazonConnector extends Module
                 'class' => 'btn btn-default pull-right'
             )
         );
-    
+        // Générer un form de config pour le module Prestashop
         $helper = new HelperForm();
     
         // Module, token and currentIndex
