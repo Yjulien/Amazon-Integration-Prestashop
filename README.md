@@ -29,9 +29,9 @@ Contributions are welcome! If you find a bug or have a feature request, please o
 ## License
 This module is licensed under the MIT License. See the LICENSE file for details.
 
-Yjulien
 
-🇫🇷🇫🇷 VERSION 🇫🇷🇫🇷
+
+--------------- FR ------------------------------
 
 
 # Amazon-Integration-Prestashop
@@ -55,3 +55,6 @@ Les contributions sont les bienvenues! Si vous trouvez un bogue ou avez une dema
 
 ## Licence
 Ce module est sous licence MIT. Veuillez consulter le fichier LICENSE pour plus de détails.
+
+
+Yjulien
